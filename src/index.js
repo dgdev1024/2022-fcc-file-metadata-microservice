@@ -29,7 +29,7 @@ app.get("/", (_, res) =>
 // POST /
 //
 // Returns some information on the uploaded file.
-app.post("/", multer.single("upfile"), (req, res) => {
+app.post("/api/fileanalyse", multer.single("upfile"), (req, res) => {
   const { originalname, mimetype, size } = req.file;
 
   return res.status(200).json({
