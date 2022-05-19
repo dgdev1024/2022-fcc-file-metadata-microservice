@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>FreeCodeCamp Challenge | File Metadata Microservice</title>
+  </head>
+  <body>
+    <h1>File Metadata Microservice</h1>
+    <p>Use the interface below to upload a file and display its contents.</p>
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <input type="file" name="upfile" id="upfile" style="display: none" />
+      <p class="file-to-upload"><em>No file chosen.</em></p>
+      <button type="button" class="choose-file-button">Choose File</button>
+      <button type="submit" class="submit-button" disabled>Submit</button>
+    </form>
+    <p>
+      Coded by
+      <a href="http://dgdev1024.com" target="_blank">Dennis Griffin</a>
+    </p>
+    <script src="/public/script.js"></script>
+  </body>
+</html>
